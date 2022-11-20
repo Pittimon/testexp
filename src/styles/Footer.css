@@ -1,0 +1,27 @@
+.footer {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  background-color:black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.black-gold {
+    background-color: #5e4e0d;
+}
+
+.black-red {
+  background-color: #af3a3a;
+}
+
+.blue-white {
+  background-color: #0FACF3; 
+}
+
+.copyright-blue-white {
+  color: #fff
+}

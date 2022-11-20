@@ -1,0 +1,132 @@
+.header {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.header-black-gold {
+    background-color:#5e4e0d;
+    color: #fff;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.header-black-red {
+    background-color: #af3a3a;
+    color: #fff;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.header-blue-white {
+    background-color: #0FACF3; 
+    color: #fff;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.logout {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 8px 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #f9f9f9;
+    border-radius: 4px;
+    transition: all 0.2s ease 0s;
+}
+
+.logout-black-gold {
+    background-color:#5e4e0d;
+    padding: 8px 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #f9f9f9;
+    border-radius: 4px;
+    transition: all 0.2s ease 0s;
+}
+
+.logout-black-red {
+    background-color: #af3a3a;
+    padding: 8px 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #f9f9f9;
+    border-radius: 4px;
+    transition: all 0.2s ease 0s;
+}
+
+.logout-blue-white {
+    background-color: #0FACF3;
+    padding: 8px 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #f9f9f9;
+    border-radius: 4px;
+    transition: all 0.2s ease 0s;
+}
+
+.logout-blue-white:hover {
+    background-color: #f9f9f9;
+    color: #0FACF3;
+        border-color: transparent;
+}
+
+.logout-black-gold:hover {
+    background-color: #f9f9f9;
+    color:#5e4e0d;
+    ;
+        border-color: transparent;
+}
+
+.logout-black-red:hover {
+    background-color: #f9f9f9;
+    color:#af3a3a;
+    ;
+        border-color: transparent;
+}
+
+.logout:hover {
+    background-color: #f9f9f9;
+        color: #000;
+        border-color: transparent;
+}
+
+.theme {
+    align-items: center;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100%;
+    justify-content: flex-end;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    margin-right: auto;
+    margin-left: 25px;
+}
+
+.theme a {
+    display:flex;
+    align-items: center;
+    padding: 0 12px;
+}

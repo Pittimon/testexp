@@ -1,0 +1,131 @@
+.about-screen {
+    position: relative;
+    height: 100%;
+    z-index:2;   
+}
+
+
+.about-logo {
+    position: fixed;
+    left: 0;
+    width: 150px;
+    object-fit: contain;
+    padding-left: 20px;
+}
+
+.about-gradient {
+    width: 100%;
+    z-index: 1;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.8) 0,
+        rgba(0, 0, 0, 0) 60%,
+        rgba(0, 0, 0, 0.8) 100%
+    );
+}
+
+.about-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 30%;
+    margin: auto;
+    text-align: center;
+    z-index: 1;
+    color: #fff;
+    padding: 20px;
+}
+
+.about-body > h1 {
+    font-size: 3.125rem;
+    margin-bottom: 20px;
+}
+
+.about-body > h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.about-body > h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+
+.about-contact {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-getstarted {
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #f9f9f9;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.about-getstarted-black-gold {
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: #5e4e0d;
+    background-color: transparent;
+    border: 1px solid #5e4e0d;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.about-getstarted-black-red {
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: #af3a3a;
+    background-color: transparent;
+    border: 1px solid #af3a3a;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.about-getstarted-blue-white {
+    padding: 16px 20px;
+    font-size: 1rem;
+    color: #0FACF3;
+    background-color: transparent;
+    border: 1px solid #0FACF3;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.about-getstarted:hover {
+    background-color: #f9f9f9;
+    color: #000
+}
+
+.about-getstarted-black-gold:hover {
+    background-color: #5e4e0d;
+    color: #fff
+}
+
+.about-getstarted-black-red:hover {
+    background-color: #af3a3a;
+    color: #fff
+}
+
+.about-getstarted-blue-white:hover {
+    background-color: #0FACF3;
+    color: #fff
+}

@@ -1,24 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
+import React, { useState } from "react";
+import Backdrop from "./components/Backdrop";
+import Home from "./components/Home";
+import Aboutus from "./components/Aboutus";
+import Login from "./components/Login";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import SignUpScreen from "./components/SignUpScreen";
+import Footer from "./components/Footer";
+import Theme from "./components/Theme";
+import { selectTheme } from "./features/theme/themeSlice";
+import { useSelector } from "react-redux";
+import { selectUser } from "./features/user/userSlice";
 
 function App() {
+  const [sidebar, setSidebar] = useState(false);
+  const user = useSelector(selectUser);
+  const theme = useSelector(selectTheme);
+
+  const toggleSidebar = () => {
+    setSidebar((prevState) => !prevState);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      {!user ? (
+        <Routes>
+          <Route path="/" element={<Login />}></Route>
+          <Route path="/signup" element={<SignUpScreen />}></Route>
+        </Routes>
+      ) : (
+        <div className={theme === "blue-white" ? `body-${theme}` : ""}>
+          <Header />
+          <Backdrop />
+          <Sidebar />
+          <Routes>
+            <Route path="/home" element={<Home />}></Route>
+            <Route path="/aboutus" element={<Aboutus />}></Route>
+          </Routes>
+          <Theme />
+          <Footer />
+        </div>
+      )}
+    </Router>
   );
 }
 
