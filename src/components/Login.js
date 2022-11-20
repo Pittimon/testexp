@@ -21,7 +21,6 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("eiei");
     const user = {
       username: usernameRef.current.value,
       password: passwordRef.current.value,
@@ -41,8 +40,6 @@ const Login = () => {
           }
         });
       });
-
-    console.log(user);
   };
 
   return (

@@ -21,13 +21,11 @@ const Theme = () => {
 
   const handleOpen = (e) => {
     setAnchorEl(e.currentTarget);
-    console.log(anchorEl);
   };
 
   const handleOri = () => {
     dispatch(setThemeOri());
     setAnchorEl(null);
-    console.log("eiei");
   };
 
   const handleGold = () => {

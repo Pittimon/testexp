@@ -81,19 +81,16 @@ const SignUpScreen = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(values);
     dispatch(setDialog());
   };
 
   const handleChange = (event) => {
-    console.log(event.target.value);
     setBank(event.target.value);
     onChange(event);
   };
 
   const onChange = (e) => {
     setValues({ ...values, [e.target.name]: e.target.value });
-    console.log(e.target.name);
   };
 
   return (
